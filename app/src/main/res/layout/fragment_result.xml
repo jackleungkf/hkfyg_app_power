@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:orientation="vertical"
+        >
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                style="@style/RegularBlack25"
+                android:letterSpacing="@dimen/title_letter_spacing"
+                android:text="@string/my_result"
+            />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:paddingTop="30dp"
+            >
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                >
+
+                    <TextView
+                        android:id="@+id/usernameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="30dp"
+                        android:letterSpacing="@dimen/title_letter_spacing"
+                        android:text="@string/username"
+                        style="@style/RegularBlack12"
+                    />
+
+                    <TextView
+                        android:id="@+id/usernameValueTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/RegularBlack14"
+                    />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                >
+
+                    <TextView
+                        android:id="@+id/nameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="@dimen/title_letter_spacing"
+                        android:text="@string/name"
+                        style="@style/RegularBlack12"
+                    />
+
+                    <TextView
+                        android:id="@+id/nameValueTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/RegularBlack14"
+                    />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/teamTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="@dimen/title_letter_spacing"
+                        android:text="@string/team"
+                        style="@style/RegularBlack12"
+                    />
+
+                    <TextView
+                        android:id="@+id/teamValueTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/RegularBlack14"
+                    />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/schoolTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="@dimen/title_letter_spacing"
+                        android:text="@string/school"
+                        style="@style/RegularBlack12"
+                        />
+
+                    <TextView
+                        android:id="@+id/schoolValueTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/RegularBlack14"
+                    />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/confirm_button_height"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/background_capsule_accent_fill"
+                android:stateListAnimator="@null"
+                style="@style/RegularWhite14"
+                android:text="@string/logout"
+                android:textAllCaps="false"
+            />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,104 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="RegularBlack12" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="RegularBlack14" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="RegularBlack16" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="RegularBlack22" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="RegularBlack25" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="RegularBlack30" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="RegularBlack34" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="RegularLightGray12" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorLightGray</item>
+    </style>
+
+    <style name="RegularWhite12" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="RegularWhite14" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="RegularWhite22" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="RegularWhite70" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">70sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="RegularAccent12" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="RegularAccent35" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="BoldAccent12" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BoldAccent35" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TabLayoutAppearance" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/TabAppearance</item>
+    </style>
+
+    <style name="TabAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+</resources>

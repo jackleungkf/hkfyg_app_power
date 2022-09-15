@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorOrange"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.hkfyg.camp.widget.NavBarView
+        android:id="@+id/navBarView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_bar_height"
+        app:layout_constraintTop_toTopOf="parent"
+    />
+
+
+    <TextView
+        android:id="@+id/reminderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/navBarView"
+        style="@style/RegularBlack14"
+    />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/reminderTextView"
+        app:layout_constraintBottom_toTopOf="@+id/buttonsContainer"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/navBarView"
+        >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:paddingEnd="30dp"
+                android:paddingStart="30dp"
+                android:src="@drawable/running1"
+            />
+
+            <TextView
+                android:id="@+id/timerTextView"
+                style="@style/RegularWhite70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00:00"
+            />
+
+            <LinearLayout
+                android:id="@+id/inputViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                >
+
+                    <TextView
+                        android:id="@+id/numbersTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        style="@style/RegularBlack25"
+                    />
+
+                    <com.hkfyg.camp.widget.InputView
+                        android:id="@+id/inputView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="50dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="30dp"
+                        android:paddingBottom="50dp"
+                        android:visibility="gone"
+                    />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/nav_bar_height"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <LinearLayout
+            android:id="@+id/giveUpButtonContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:visibility="gone"
+            >
+            <Button
+                android:id="@+id/giveUpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/confirm_button_height"
+                android:background="@drawable/background_capsule_accent_fill"
+                android:stateListAnimator="@null"
+                style="@style/RegularWhite14"
+                android:text="@string/give_up"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            >
+            <Button
+                android:id="@+id/completeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/confirm_button_height"
+                android:background="@drawable/background_capsule_accent_fill"
+                android:stateListAnimator="@null"
+                style="@style/RegularWhite14"
+                android:text="@string/complete"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

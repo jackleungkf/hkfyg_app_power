@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                android:layout_gravity="end"
+                android:src="@drawable/register"
+                android:scaleType="fitXY"
+            />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="用戶註冊"
+                android:letterSpacing="@dimen/title_letter_spacing"
+                style="@style/RegularBlack25"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="70dp"
+                android:paddingEnd="70dp"
+                android:paddingBottom="40dp"
+                android:orientation="vertical">
+
+                <com.hkfyg.camp.widget.InputView
+                    android:id="@+id/usernameInputView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                />
+
+                <com.hkfyg.camp.widget.InputView
+                    android:id="@+id/passwordInputView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                />
+
+                <com.hkfyg.camp.widget.InputView
+                    android:id="@+id/passwordConfirmationInputView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <com.hkfyg.camp.widget.InputView
+                    android:id="@+id/nameInputView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                />
+
+                <com.hkfyg.camp.widget.InputView
+                    android:id="@+id/genderInputView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                />
+
+                <com.hkfyg.camp.widget.InputView
+                    android:id="@+id/schoolInputView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                />
+
+                <Button
+                    android:id="@+id/registerButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/confirm_button_height"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_capsule_accent_fill"
+                    android:stateListAnimator="@null"
+                    style="@style/RegularWhite14"
+                    android:text="@string/register"
+                    android:textAllCaps="false"
+                />
+
+                <Button
+                    android:id="@+id/loginButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    style="@style/RegularAccent12"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

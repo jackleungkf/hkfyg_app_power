@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_letter_spacing">0.1</dimen>
+    <dimen name="tab_bar_height">70dp</dimen>
+    <dimen name="nav_bar_height">70dp</dimen>
+    <dimen name="confirm_button_height">36dp</dimen>
+</resources>

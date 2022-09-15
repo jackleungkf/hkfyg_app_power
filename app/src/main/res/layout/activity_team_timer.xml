@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:focusableInTouchMode="true"
+>
+
+    <com.hkfyg.camp.widget.NavBarView
+        android:id="@+id/navBarView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_bar_height"
+        app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:gravity="center_horizontal"
+        style="@style/RegularBlack34"
+        android:text="00:00:00"
+        app:layout_constraintTop_toBottomOf="@+id/navBarView"
+    />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingEnd="50dp"
+        android:paddingStart="50dp"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/totalScoreContainer"
+        app:layout_constraintTop_toBottomOf="@+id/timerTextView" />
+
+    <LinearLayout
+        android:id="@+id/totalScoreContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:layout_constraintBottom_toTopOf="@+id/buttonContainer"
+    >
+
+        <TextView
+            android:id="@+id/totalScoreTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:letterSpacing="@dimen/title_letter_spacing"
+            style="@style/RegularBlack14"
+            android:text="totalScore"
+        />
+
+        <TextView
+            android:id="@+id/totalScoreValueTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|top"
+            style="@style/RegularBlack25"
+            android:text="0 分"
+        />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/completeButton"
+            style="@style/RegularWhite14"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/confirm_button_height"
+            android:background="@drawable/background_capsule_accent_fill"
+            android:stateListAnimator="@null"
+            android:text="@string/complete"
+            android:textAllCaps="false"
+            tools:visibility="invisible" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:orientation="horizontal"
+>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="26dp"
+        android:layout_weight="1"
+        android:src="@drawable/task_result_sit_up"
+        android:scaleType="fitCenter"
+    />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingTop="6dp"
+        android:orientation="vertical"
+    >
+
+        <TextView
+            android:id="@+id/taskNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:letterSpacing="@dimen/title_letter_spacing"
+            android:background="@drawable/background_capsule_accent_fill"
+            style="@style/RegularWhite14"
+        />
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:layout_centerVertical="true"
+            android:letterSpacing="@dimen/title_letter_spacing"
+            style="@style/RegularBlack14"
+        />
+
+        <TextView
+            android:id="@+id/timeValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            style="@style/RegularBlack30"
+        />
+
+    </RelativeLayout>
+
+</LinearLayout>
